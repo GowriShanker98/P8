@@ -1,0 +1,12 @@
+{% extends "myapp/parent.html" %}
+
+{% block title %}
+<title>Child Html</title>
+{% endblock  %}
+
+{% block content %}
+<marquee behavior="slide" direction="right"><h1>welcome to Child Html Page</h1></marquee>
+<a href="{% url 'Sample' %}">Sample</a>
+<a href="{% url 'myapp:Home' %}">Home</a>
+<a href="{% url 'myapp:Index' %}">Index</a>
+{% endblock  %}
